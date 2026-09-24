@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Hydtek">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00f2fe"/>
+      <stop offset="1" stop-color="#7f00ff"/>
+    </linearGradient>
+    <mask id="play">
+      <rect width="1024" height="1024" fill="white"/>
+      <path d="M470 450 L580 512 L470 574 Z" fill="black" stroke="black" stroke-width="18" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="#0a0d14"/>
+  <g fill="url(#g)" mask="url(#play)">
+    <rect x="217" y="212" width="170" height="600" rx="44"/>
+    <rect x="637" y="212" width="170" height="600" rx="44"/>
+    <rect x="292" y="432" width="440" height="160" rx="34"/>
+  </g>
+</svg>
