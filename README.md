@@ -3,7 +3,7 @@
 Static site for Hydtek, served by GitHub Pages at https://hydtek.ca. Plain HTML/CSS, no build step, no trackers.
 
 - `/` — Hydtek landing page
-- `/tvplayer/privacy/`, `/tvplayer/terms/`, `/tvplayer/support/` — TV Player policies and support (linked from the app's Settings and App Store Connect)
+- `/tvplayer/privacy/`, `/tvplayer/terms/`, `/tvplayer/support/` — TekTV policies and support (linked from the app's Settings and App Store Connect)
 - `/app-ads.txt` — AdMob authorised sellers (must stay at the domain root)
 - `CNAME` — custom domain for GitHub Pages
 
