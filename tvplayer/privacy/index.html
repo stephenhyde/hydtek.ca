@@ -22,7 +22,7 @@
 <li>There are no accounts. We never ask for your name, email or phone number.</li>
 <li>Your playlists, and any logins for them, stay on your device. We never receive them.</li>
 <li>The app doesn't provide any channels or content. It plays what your own provider supplies.</li>
-<li>We use Google services for anonymous usage statistics, app settings and ads. We never send them the channels, titles or playlists you use.</li>
+<li>We use Google services for anonymous usage statistics, crash reports, app settings and ads. We never send them the channels, titles or playlists you use.</li>
 </ul>
 
 <h2>Information that stays on your device</h2>
@@ -40,6 +40,15 @@
 <li>a random app-instance identifier created for your installation of the app.</li>
 </ul>
 <p>We have configured Firebase Analytics not to collect your device's advertising identifier. Analytics data is not used to identify you and is kept for a limited period (no longer than 14 months).</p>
+
+<h3>Google Firebase Crashlytics</h3>
+<p>If the app crashes, Firebase Crashlytics sends us a crash report so we can find and fix the problem. A crash report contains:</p>
+<ul>
+<li>the technical details of the crash (a stack trace showing where in the app's code it happened);</li>
+<li>device model, iOS version, app version, free memory and disk space, and whether the app was in the foreground at the time;</li>
+<li>a random installation identifier created for your installation of the app.</li>
+</ul>
+<p>Crash reports do <strong>not</strong> include your playlists, logins, channels or the titles you watch. We use them only to fix crashes, and Crashlytics keeps them for 90 days.</p>
 
 <h3>Google Firebase Remote Config</h3>
 <p>The app downloads settings from Firebase Remote Config, for example whether an update is required or how often ads appear. This uses the same app-instance identifier.</p>
