@@ -11,4 +11,3 @@ The contact email appears on several pages; to change it everywhere:
 
     for f in index.html tvplayer/*/index.html; do sed -i '' 's/support@hydtek.ca/NEW@EXAMPLE.COM/g' "$f"; done
 
-Before launch: have the privacy policy and terms reviewed (they're marked as drafts).
