@@ -1,0 +1,25 @@
+#EXTM3U url-tvg="https://hydtek.ca/tvplayer/demo-guide.xml"
+#EXTINF:-1 tvg-id="northwind.news" tvg-chno="101" group-title="News",Northwind News
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8?ch=1
+#EXTINF:-1 tvg-id="skyline.weather" tvg-chno="102" group-title="News",Skyline Weather
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8?ch=2
+#EXTINF:-1 tvg-id="harbor.sports" tvg-chno="103" group-title="Sports",Harbor Sports
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8?ch=3
+#EXTINF:-1 tvg-id="summit.sports" tvg-chno="104" group-title="Sports",Summit Sports 2
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8?ch=4
+#EXTINF:-1 tvg-id="greenfield.nature" tvg-chno="105" group-title="Nature",Greenfield Nature
+https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8?ch=5
+#EXTINF:-1 tvg-id="blue.current" tvg-chno="106" group-title="Nature",Blue Current
+https://demo.unified-streaming.com/k8s/live/stable/live.isml/.m3u8?ch=6
+#EXTINF:-1 tvg-id="nova.science" tvg-chno="107" group-title="Documentary",Nova Science
+https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8?ch=7
+#EXTINF:-1 tvg-id="wander.travel" tvg-chno="108" group-title="Documentary",Wander Travel
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8?ch=8
+#EXTINF:-1 tvg-id="silverlight.cinema" tvg-chno="109" group-title="Movies 24/7",Silverlight Cinema
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8?ch=9
+#EXTINF:-1 tvg-id="tiny.tales" tvg-chno="110" group-title="Kids",Tiny Tales Kids
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8?ch=10
+#EXTINF:-1 tvg-id="pulse.music" tvg-chno="111" group-title="Music",Pulse Music
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8?ch=11
+#EXTINF:-1 tvg-id="fireside.cooking" tvg-chno="112" group-title="Lifestyle",Fireside Cooking
+https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8?ch=12
