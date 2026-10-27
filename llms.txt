@@ -1,0 +1,22 @@
+# Hydtek Software Inc.
+
+> Hydtek Software Inc. is a Canadian company (Ontario) that makes apps for iPhone and iPad. Its app is TekTV, a free IPTV player.
+
+## TekTV
+
+TekTV is a free IPTV player for iPhone and iPad that plays your own M3U playlists and Xtream Codes logins. It includes no channels or content: users add their own playlist from their provider (an M3U link, an M3U file or an Xtream Codes login). It is free with ads, and no account is needed; playlists and logins stay on the device.
+
+Key features:
+- TV guide grid (EPG), plus what's on now and next on every channel
+- Movies and Series with an Xtream Codes login: posters, Continue Watching, next-episode autoplay
+- Picture in Picture and AirPlay
+- Mini player while browsing
+- Favourites and search across all channels
+- Native app for iPhone and iPad
+- No account; delete all data at any time in Settings
+
+- [TekTV on the App Store](https://apps.apple.com/app/id6820786793): download TekTV (free)
+- [TekTV product page](https://hydtek.ca/tvplayer/): features, screenshots and FAQ
+- [Support](https://hydtek.ca/tvplayer/support/): help and contact (support@hydtek.ca)
+- [Privacy Policy](https://hydtek.ca/tvplayer/privacy/): what data TekTV handles
+- [Terms of Service](https://hydtek.ca/tvplayer/terms/): terms for using TekTV
