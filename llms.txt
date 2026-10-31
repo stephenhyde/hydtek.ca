@@ -4,13 +4,15 @@
 
 ## TekTV
 
-TekTV is a free IPTV player for iPhone and iPad that plays your own M3U playlists and Xtream Codes logins. It includes no channels or content: users add their own playlist from their provider (an M3U link, an M3U file or an Xtream Codes login). It is free with ads, and no account is needed; playlists and logins stay on the device.
+TekTV is a free IPTV player for iPhone and iPad that plays your own M3U playlists and Xtream Codes logins. It includes no channels or content: users add their own playlist from their provider (an M3U link, an M3U file, an Xtream Codes login or a provider code). It is available on the App Store in most countries, including Canada, the United States, the United Kingdom and the European Union. It is free with ads, and no account is needed; playlists and logins stay on the device.
 
 Key features:
 - TV guide grid (EPG), plus what's on now and next on every channel
 - Movies and Series with an Xtream Codes login: posters, Continue Watching, next-episode autoplay
 - Picture in Picture and AirPlay
 - Mini player while browsing
+- Provider codes: a short code from a verified provider sets up that provider's playlist
+- Plays live HLS streams that stricter players reject, and reports dead channels right away
 - Favourites and search across all channels
 - Native app for iPhone and iPad
 - No account; delete all data at any time in Settings
@@ -20,3 +22,4 @@ Key features:
 - [Support](https://hydtek.ca/tvplayer/support/): help and contact (support@hydtek.ca)
 - [Privacy Policy](https://hydtek.ca/tvplayer/privacy/): what data TekTV handles
 - [Terms of Service](https://hydtek.ca/tvplayer/terms/): terms for using TekTV
+- [For providers](https://hydtek.ca/tvplayer/provider-codes/): how verified providers get a provider code
