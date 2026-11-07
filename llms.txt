@@ -1,6 +1,6 @@
 # Hydtek Software Inc.
 
-> Hydtek Software Inc. is a Canadian company (Ontario) that makes apps for iPhone and iPad. Its app is TekTV, a free IPTV player.
+> Hydtek Software Inc. is a Canadian company (Ontario) that makes apps for iPhone and iPad. Its apps are TekTV, a free IPTV player, and Chess Openings: Learn & Quiz (coming soon).
 
 ## TekTV
 
@@ -23,3 +23,11 @@ Key features:
 - [Privacy Policy](https://hydtek.ca/tvplayer/privacy/): what data TekTV handles
 - [Terms of Service](https://hydtek.ca/tvplayer/terms/): terms for using TekTV
 - [For providers](https://hydtek.ca/tvplayer/provider-codes/): how verified providers get a provider code
+
+## Chess Openings: Learn & Quiz
+
+Chess Openings: Learn & Quiz (coming soon) teaches chess opening names, moves and ideas through short lessons and quizzes, with XP, ranks, a daily streak and spaced review. It is free with ads; an optional Apple or Google sign-in saves progress across devices.
+
+- [Support](https://hydtek.ca/chessopenings/support/): help and contact (support@hydtek.ca)
+- [Privacy Policy](https://hydtek.ca/chessopenings/privacy/): what data Chess Openings handles
+- [Terms of Service](https://hydtek.ca/chessopenings/terms/): terms for using Chess Openings
