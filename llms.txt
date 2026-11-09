@@ -28,6 +28,7 @@ Key features:
 
 Chess Openings: Learn & Quiz (coming soon) teaches chess opening names, moves and ideas through short lessons and quizzes, with XP, ranks, a daily streak and spaced review. It is free with ads; an optional Apple or Google sign-in saves progress across devices.
 
+- [Chess Openings product page](https://hydtek.ca/chessopenings/): features, a try-it opening quiz and FAQ
 - [Support](https://hydtek.ca/chessopenings/support/): help and contact (support@hydtek.ca)
 - [Privacy Policy](https://hydtek.ca/chessopenings/privacy/): what data Chess Openings handles
 - [Terms of Service](https://hydtek.ca/chessopenings/terms/): terms for using Chess Openings

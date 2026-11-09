@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess Openings: Learn &amp; Quiz – Learn Chess Openings for iPhone and iPad</title>
+<meta name="description" content="Chess Openings: Learn & Quiz teaches you chess opening names, moves and ideas with short lessons and quizzes, XP, ranks and a daily streak. Free for iPhone and iPad. Coming soon to the App Store.">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://hydtek.ca/chessopenings/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/chessopenings/img/chess-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hydtek">
+<meta property="og:title" content="Chess Openings: Learn &amp; Quiz">
+<meta property="og:description" content="Watch an opening play out, learn its name and idea, then get quizzed. Short lessons, XP and a daily streak. Free for iPhone and iPad.">
+<meta property="og:url" content="https://hydtek.ca/chessopenings/">
+<meta property="og:image" content="https://hydtek.ca/chessopenings/img/chess-og.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/style.css">
+<style>
+:root { --teal: #2bb39a; --teal-soft: rgba(43, 179, 154, 0.14); --sq-light: #eaf6f2; --sq-dark: #8ccfbf; }
+.app-head { display: flex; gap: 20px; align-items: center; padding: 24px 0 8px; }
+.app-head img.icon { width: 96px; height: 96px; border-radius: 22px; flex: none; box-shadow: 0 0 40px rgba(43, 179, 154, 0.22); }
+.app-head h1 { margin: 0 0 4px; }
+.lede { font-size: 18px; color: var(--text); margin: 16px 0 20px; }
+.soon { display: inline-block; background: var(--teal-soft); color: var(--teal); border: 1px solid rgba(43, 179, 154, 0.4); border-radius: 999px; padding: 6px 14px; font-weight: 600; font-size: 14px; }
+.features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.features li { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; margin: 0; }
+.features strong { display: block; margin-bottom: 2px; }
+details { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+details summary { color: var(--text); font-weight: 600; cursor: pointer; }
+details p { margin: 10px 0 2px; }
+
+/* Try it: a tiny "Name it" quiz */
+.play { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 18px; display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 20px; align-items: center; }
+.board { display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr); aspect-ratio: 1; border-radius: 12px; overflow: hidden; width: 100%; max-width: 300px; }
+.board div { display: flex; align-items: center; justify-content: center; font-size: clamp(20px, 6.4vw, 30px); line-height: 1; transition: background-color .25s; font-family: "Apple Symbols", "Segoe UI Symbol", "DejaVu Sans", serif; }
+.board .l { background: var(--sq-light); }
+.board .d { background: var(--sq-dark); }
+.board .hl { background: #f6d77a; }
+.board .hl.d { background: #e9c25a; }
+.board .w { color: #fff; text-shadow: 0 0 1px #12352e, 0 0 1px #12352e, 0 1px 1px #12352e, 1px 0 1px #12352e, -1px 0 1px #12352e, 0 -1px 1px #12352e; }
+.board .b { color: #12352e; }
+.quiz .q { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 4px; }
+.quiz .moves { color: var(--text); font-weight: 600; min-height: 1.6em; margin: 0 0 12px; font-variant-numeric: tabular-nums; }
+.opts { display: grid; gap: 8px; }
+.opts button { font: inherit; font-weight: 600; text-align: left; color: var(--text); background: var(--raised); border: 1px solid var(--border); border-bottom-width: 3px; border-radius: 12px; padding: 10px 14px; cursor: pointer; transition: transform .08s, background .2s, border-color .2s; }
+.opts button:hover:not(:disabled) { border-color: rgba(43, 179, 154, 0.6); }
+.opts button:active:not(:disabled) { transform: translateY(2px); }
+.opts button:disabled { cursor: default; opacity: .55; }
+.opts button.right { background: var(--teal); border-color: #1d8c78; color: #fff; opacity: 1; }
+.opts button.wrong { background: #3a1f28; border-color: #8a3a4c; opacity: 1; }
+.result { min-height: 3.2em; margin: 12px 0 0; font-size: 15px; }
+.result strong { color: var(--teal); }
+.score { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+@media (max-width: 560px) { .play { grid-template-columns: 1fr; } .board { margin: 0 auto; } }
+@media (max-width: 480px) { .app-head img.icon { width: 72px; height: 72px; border-radius: 16px; } }
+@media (prefers-reduced-motion: reduce) { .board div, .opts button { transition: none; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Chess Openings: Learn & Quiz",
+  "description": "Learn chess openings with short lessons and quizzes for iPhone and iPad: watch an opening play out, learn its name and idea, then get quizzed, with XP, ranks, a daily streak and spaced review. Free with ads.",
+  "operatingSystem": "iOS, iPadOS",
+  "applicationCategory": "EducationalApplication",
+  "url": "https://hydtek.ca/chessopenings/",
+  "image": "https://hydtek.ca/chessopenings/img/chess-og.jpg",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "Hydtek Software Inc.", "url": "https://hydtek.ca/", "email": "support@hydtek.ca" },
+  "author": { "@type": "Organization", "name": "Hydtek Software Inc." }
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><a href="/"><img class="mark" src="/mark.svg" alt=""> Hydtek</a></header>
+
+<section class="app-head">
+<img class="icon" src="/chessopenings/img/chess-icon.png" alt="Chess Openings app icon: a knight with a star">
+<div>
+<h1>Chess Openings: Learn &amp; Quiz</h1>
+<p class="meta">Learn chess openings on iPhone &amp; iPad · Free</p>
+</div>
+</section>
+
+<p class="lede">Heard someone say "that's the Berlin" and had no idea what they meant? Chess Openings teaches you the names, moves and ideas of the openings you'll actually meet, a few minutes at a time.</p>
+
+<span class="soon">Coming soon to the App Store</span>
+
+<h2>Try it: name the opening</h2>
+<div class="play" id="play">
+<div class="board" id="board" role="img" aria-label="Chess board playing an opening"></div>
+<div class="quiz">
+<p class="q">Watch the moves, then pick the name</p>
+<p class="moves" id="moves" aria-live="polite"></p>
+<div class="opts" id="opts"></div>
+<p class="result" id="result" aria-live="polite"></p>
+<p class="score" id="score"></p>
+</div>
+</div>
+
+<h2>How it works</h2>
+<ul class="features">
+<li><strong>Watch</strong>The board plays an opening move by move, so you see its shape before you ever have to memorise it.</li>
+<li><strong>Learn</strong>Each opening comes with its name and a one-line idea: what White and Black are each going for.</li>
+<li><strong>Get quizzed</strong>Name it, play it, find the next move, spot the difference between look-alikes, and beat the clock in speed rounds.</li>
+<li><strong>Remember it</strong>Openings you miss come back in Review until they stick.</li>
+<li><strong>A path to follow</strong>Units from King's Pawn basics through the Italian, Ruy López, Sicilian, French, Caro-Kann, Queen's Gambit, London and Indian systems, and gambits.</li>
+<li><strong>XP, ranks &amp; streaks</strong>Earn XP, rank up from Pawn towards King, and keep your daily streak going.</li>
+<li><strong>Keep your progress</strong>Play without an account, or sign in with Apple or Google to keep your progress on a new phone.</li>
+<li><strong>Free</strong>No subscription. Free to download and use, supported by ads.</li>
+</ul>
+
+<h2>FAQ</h2>
+<details open><summary>Who is it for?</summary><p>Casual players who want to know what the openings are called and what they're trying to do, without sitting down to memorise 15-move lines. If you play online and want to recognise the Italian, the Sicilian or the London when you see them, it's for you.</p></details>
+<details><summary>Is it free?</summary><p>Yes. Chess Openings: Learn &amp; Quiz is free to download and use, and is supported by ads. There is no subscription.</p></details>
+<details><summary>When is it coming out?</summary><p>Soon, for iPhone and iPad. This page will link to the App Store as soon as it's live.</p></details>
+<details><summary>Do I need an account?</summary><p>No. You can learn and play without one. Signing in with Apple or Google saves your progress to your account so it comes back on a new device. See the <a href="/chessopenings/privacy/">Privacy Policy</a> for details.</p></details>
+
+<h2>Help</h2>
+<nav class="links">
+<a href="/chessopenings/support/">Support</a>
+<a href="/chessopenings/privacy/">Privacy Policy</a>
+<a href="/chessopenings/terms/">Terms of Service</a>
+<a href="mailto:support@hydtek.ca">support@hydtek.ca</a>
+</nav>
+
+<footer class="site">
+<a href="/chessopenings/privacy/">Privacy</a><a href="/chessopenings/terms/">Terms</a><a href="/chessopenings/support/">Support</a>
+<p>© 2026 Hydtek Software Inc. · <a href="mailto:support@hydtek.ca">support@hydtek.ca</a></p>
+</footer>
+</div>
+
+<script>
+(function () {
+  var V = "︎";
+  var GLYPH = { k: "♚", q: "♛", r: "♜", b: "♝", n: "♞", p: "♟" };
+  var OPENINGS = [
+    { name: "Ruy López", moves: ["e2e4", "e7e5", "g1f3", "b8c6", "f1b5"], san: "1. e4 e5 2. Nf3 Nc6 3. Bb5", idea: "White's bishop pressures the knight that defends e5." },
+    { name: "Italian Game", moves: ["e2e4", "e7e5", "g1f3", "b8c6", "f1c4"], san: "1. e4 e5 2. Nf3 Nc6 3. Bc4", idea: "White's bishop aims straight at Black's weak f7 square." },
+    { name: "Sicilian Defense", moves: ["e2e4", "c7c5"], san: "1. e4 c5", idea: "Black fights for the centre from the side and plays for a win." },
+    { name: "French Defense", moves: ["e2e4", "e7e6", "d2d4", "d7d5"], san: "1. e4 e6 2. d4 d5", idea: "Black builds a solid pawn chain and strikes back at White's centre." },
+    { name: "Caro-Kann Defense", moves: ["e2e4", "c7c6", "d2d4", "d7d5"], san: "1. e4 c6 2. d4 d5", idea: "Like the French, but Black keeps the light-squared bishop free." },
+    { name: "Queen's Gambit", moves: ["d2d4", "d7d5", "c2c4"], san: "1. d4 d5 2. c4", idea: "White offers a pawn to pull Black's d-pawn away from the centre." },
+    { name: "Scandinavian Defense", moves: ["e2e4", "d7d5"], san: "1. e4 d5", idea: "Black challenges e4 at once and brings the queen out early." },
+    { name: "King's Gambit", moves: ["e2e4", "e7e5", "f2f4"], san: "1. e4 e5 2. f4", idea: "White gives up a pawn for fast development and an attack on f7." }
+  ];
+  var boardEl = document.getElementById("board"), movesEl = document.getElementById("moves"),
+      optsEl = document.getElementById("opts"), resultEl = document.getElementById("result"), scoreEl = document.getElementById("score");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var cells = [], pos, timers = [], right = 0, played = 0, last = -1;
+
+  for (var r = 0; r < 8; r++) for (var f = 0; f < 8; f++) {
+    var c = document.createElement("div");
+    c.className = (r + f) % 2 ? "d" : "l";
+    boardEl.appendChild(c); cells.push(c);
+  }
+  function start() {
+    var back = "rnbqkbnr";
+    pos = {};
+    for (var f = 0; f < 8; f++) {
+      var file = "abcdefgh"[f];
+      pos[file + "8"] = "b" + back[f]; pos[file + "7"] = "bp";
+      pos[file + "2"] = "wp"; pos[file + "1"] = "w" + back[f];
+    }
+  }
+  function idx(sq) { return (8 - +sq[1]) * 8 + "abcdefgh".indexOf(sq[0]); }
+  function draw(hl) {
+    cells.forEach(function (c, i) {
+      var sq = "abcdefgh"[i % 8] + (8 - Math.floor(i / 8)), p = pos[sq];
+      c.textContent = p ? GLYPH[p[1]] + V : "";
+      c.className = ((Math.floor(i / 8) + i % 8) % 2 ? "d" : "l") + (p ? " " + p[0] : "") + (hl && hl.indexOf(sq) >= 0 ? " hl" : "");
+    });
+  }
+  function later(fn, ms) { timers.push(setTimeout(fn, reduce ? 0 : ms)); }
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  function round() {
+    timers.forEach(clearTimeout); timers = [];
+    var n; do { n = Math.floor(Math.random() * OPENINGS.length); } while (n === last); last = n;
+    var o = OPENINGS[n];
+    start(); draw(); movesEl.textContent = ""; resultEl.textContent = ""; optsEl.innerHTML = "";
+    var parts = o.san.split(" "), shown = [], si = 0;
+    o.moves.forEach(function (m, i) {
+      later(function () {
+        var from = m.slice(0, 2), to = m.slice(2);
+        pos[to] = pos[from]; delete pos[from]; draw([from, to]);
+        if (parts[si] && /\.$/.test(parts[si])) shown.push(parts[si++]);
+        shown.push(parts[si++]); movesEl.textContent = shown.join(" ");
+      }, 700 + i * 850);
+    });
+    later(function () { ask(o); }, 700 + o.moves.length * 850);
+  }
+  function ask(o) {
+    var others = shuffle(OPENINGS.filter(function (x) { return x !== o; })).slice(0, 2);
+    shuffle([o].concat(others)).forEach(function (x) {
+      var b = document.createElement("button");
+      b.type = "button"; b.textContent = x.name;
+      b.onclick = function () { answer(o, x, b); };
+      optsEl.appendChild(b);
+    });
+  }
+  function answer(o, pick, btn) {
+    played++;
+    var buttons = optsEl.querySelectorAll("button");
+    buttons.forEach(function (b) { b.disabled = true; if (b.textContent === o.name) b.classList.add("right"); });
+    if (pick === o) { right++; resultEl.innerHTML = "<strong>Correct!</strong> " + o.idea; }
+    else { btn.classList.add("wrong"); resultEl.innerHTML = "That's the <strong>" + o.name + "</strong>. " + o.idea; }
+    scoreEl.textContent = right + " of " + played + " right · next one coming up";
+    timers.push(setTimeout(round, 3800));
+  }
+  round();
+})();
+</script>
+</body>
+</html>

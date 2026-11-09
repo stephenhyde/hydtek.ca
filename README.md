@@ -4,6 +4,7 @@ Static site for Hydtek, served by GitHub Pages at https://hydtek.ca. Plain HTML/
 
 - `/` — Hydtek landing page
 - `/tvplayer/privacy/`, `/tvplayer/terms/`, `/tvplayer/support/` — TekTV policies and support (linked from the app's Settings and App Store Connect)
+- `/chessopenings/` — Chess Openings product page (with a small "name the opening" quiz)
 - `/chessopenings/privacy/`, `/chessopenings/terms/`, `/chessopenings/support/` — Chess Openings: Learn & Quiz policies and support
 - `/app-ads.txt` — AdMob authorised sellers (must stay at the domain root)
 - `CNAME` — custom domain for GitHub Pages
